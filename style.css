@@ -1,0 +1,12 @@
+.height-carousel img{
+    height: 500px;
+    object-fit: cover;
+}
+.carousel-item{
+    position:relative;
+}
+.active .animate{
+    opacity: 1;
+    transform: translate(0px,0px);
+    transition: all 0.5s ease-in-out;
+}
