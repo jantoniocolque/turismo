@@ -10,3 +10,17 @@
     transform: translate(0px,0px);
     transition: all 0.5s ease-in-out;
 }
+
+#footer button{
+    background-color: #008f39;
+    border-color: #008f39;
+}
+
+#footer input{
+    border-color: #008f39;
+}
+
+#footer a{
+    color: #008f39;
+    font-size: 25px;
+}
