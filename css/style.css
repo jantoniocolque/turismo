@@ -1,3 +1,49 @@
-img{
-    width: 200px;
+.height-carousel img{
+    height: 500px;
+    object-fit: cover;
+}
+.carousel-item{
+    position:relative;
+}
+.active .animate{
+    opacity: 1;
+    transform: translate(0px,0px);
+    transition: all 0.5s ease-in-out;
+}
+.cards-carousel{
+    width:85%;
+    margin:auto;
+}
+.carousel-control-prev{
+    left:-8%!important;
+}
+.carousel-control-next{
+    right: -8%!important;
+}
+.card-img-top {
+    border-top-left-radius: 12px !important;
+    border-top-right-radius: 12px !important;
+}
+.card{
+    border-radius: 12px !important;
+    text-align: left !important;
+    height: 100%;
+}
+
+
+
+
+
+#footer button{
+    background-color: #008f39;
+    border-color: #008f39;
+}
+
+#footer input{
+    border-color: #008f39;
+}
+
+#footer a{
+    color: #008f39;
+    font-size: 25px;
 }

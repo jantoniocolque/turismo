@@ -2,71 +2,414 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Turismo</title>
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-    crossorigin="anonymous"></script>
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo</title>
 </head>
 <body>
-    <header>
-        <!-- Navbar de argentina travel (Link a pagina de reserva de pasajes) (Link de probar Suerte)-->
-    </header>
-    <body>
-        <main>    
-            <!-- Carousel de portada -->
-            <!-- Carousel de tarjetas, mostrando informacion de los lugares (despegar.com)-->
-            <section>
-                <!-- <article>
-                    <div>
-                        <div></div>
-                        <p></p>
-                    </div>
-                </article> -->
-                <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                            <div class="card">
-                                <img src="img/mardelplata.jpg" class="d-block w-100" alt="...">
+  <!-- Navbar de argentina travel (Link a pagina de reserva de pasajes) (Link de probar Suerte)-->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/logo.png" class="rounded" alt="logo" width="100" style="background-color: #008f39;">
+        </a>
+        <div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+            aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation" style="background-color: #008f39;">
+            <span class="navbar-toggler-icon" style="background-color: #008f39;"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav ">
+                <li class="nav-item h4"><a class="nav-link text-success" href="destinos.html">¿Dónde ir?</a></li>
+                <!-- dropdown de destinos -->
+                <!-- <li class="nav-item dropdown h4">
+                <a class="nav-link dropdown-toggle text-success" href="destinos.html" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    ¿Donde ir?
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item text-success" href="#">Destino 1</a></li>
+                    <li><a class="dropdown-item text-success" href="#">Destino 2</a></li>
+                    <li>
+                    <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item text-success" href="#">Paisajes</a></li>
+                </ul>
+                </li> -->
+                <li class="nav-item h4"><a class="nav-link text-success" href="reserva.html">Reservas</a></li>
+                <li class="nav-item h4"><a class="nav-link text-success" href="#">Destino sorpresa</a></li>
+                <li class="nav-item h4"><a class="nav-link text-success" href="#">Información</a></li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <main>
+        <!-- Carousel de portada -->
+        <div class="row">
+        <section class="height-carousel p-0">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="img/buenosAires.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="img/cataratas.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="img/repDominicana.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="img/machuPicchu.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="img/calafate.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="img/rio.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="img/cafayate.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="img/puertoRico.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+        </section>
+        </div>
+        
+        <!-- Carousel de tarjetas, mostrando informacion de los lugares (despegar.com)-->
+        <section class=" cards-carousel py-4">
+            <div class= "p-3 py-0">
+                <p>SALIENDO DESDE BUENOS AIRES</p>
+                <h3><b>Vuelos baratos</b> con las mejores aerolineas</h3>
+            </div>
+            <div id="carouselBasicExample" class="carousel slide carousel-dark text-center" data-mdb-ride="carousel">
+            <!-- Controls -->
+            <div class="d-flex justify-content-center mb-4">    
+                <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselBasicExample"
+                        data-bs-slide="prev"
+                        >
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselBasicExample"
+                        data-bs-slide="next"
+                        >
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="carousel-inner py-4">
+            <!-- Single item -->
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="card">
+                                    <img
+                                        src="https://mdbootstrap.com/img/new/standard/nature/181.jpg"
+                                        class="card-img-top"
+                                        alt="..."
+                                        />
+                                    <div class="card-body">
+                                        <p class="card-text">VUELOS</p>
+                                        <h3 class="card-title">Viajá a Cordoba</h3>
+                                        <p class="card-text">
+                                            Directo por JetSMART
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                      </div>
-                      <div class="carousel-item" data-bs-interval="2000">
-                        <div class="card">
-                            <img src="img/mardelplata.jpg" class="d-block w-100" alt="...">
+
+                            <div class="col-lg-3 d-none d-lg-block">
+                                <div class="card">
+                                    <img
+                                        src="https://mdbootstrap.com/img/new/standard/nature/182.jpg"
+                                        class="card-img-top"
+                                        alt="..."
+                                        />
+                                    <div class="card-body">
+                                        <p class="card-text">VUELOS</p>
+                                        <h3 class="card-title">Viajá a Rosario</h3>
+                                        <p class="card-text">
+                                            Directo por JetSMART
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 d-none d-lg-block">
+                                <div class="card">
+                                    <img
+                                        src="https://mdbootstrap.com/img/new/standard/nature/183.jpg"
+                                        class="card-img-top"
+                                        alt="..."
+                                        />
+                                    <div class="card-body">
+                                        <p class="card-text">VUELOS</p>
+                                        <h3 class="card-title">Viajá a Uruguay</h3>
+                                        <p class="card-text">
+                                            Directo por Aerolíneas argentinas
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-3 d-none d-lg-block">
+                                <div class="card">
+                                    <img
+                                        src="https://mdbootstrap.com/img/new/standard/nature/183.jpg"
+                                        class="card-img-top"
+                                        alt="..."
+                                        />
+                                    <div class="card-body">
+                                        <p class="card-text">VUELOS</p>
+                                        <h3 class="card-title">Viajá a Mar del Plata</h3>
+                                        <p class="card-text">
+                                            Directo por Aerolíneas argentinas
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                      <div class="carousel-item">
-                        <div class="card">
-                            <img src="img/mardelplata.jpg" class="d-block w-100" alt="...">
-                        </div>
-                      </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
-            </section>
-            <!-- boton "VER MAS" que te lleve a una pagina de todos los lugares disponibles para viajar -->
-            <!-- info de tarjetas -->
-        </main>
-    </body>
-    <footer>
+                </div>
+
+            <!-- Single item -->
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-12">
+                                <div class="card">
+                                    <img
+                                        src="https://mdbootstrap.com/img/new/standard/nature/184.jpg"
+                                        class="card-img-top"
+                                        alt="..."
+                                        />
+                                    <div class="card-body">
+                                        <p class="card-text">VUELOS</p>
+                                        <h3 class="card-title">Viajá a Nueva York</h3>
+                                        <p class="card-text">
+                                            Con escalas por LATAM Airlines Group
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 d-none d-lg-block">
+                                <div class="card">
+                                    <img
+                                        src="https://mdbootstrap.com/img/new/standard/nature/185.jpg"
+                                        class="card-img-top"
+                                        alt="..."
+                                        />
+                                    <div class="card-body">
+                                        <p class="card-text">VUELOS</p>
+                                        <h3 class="card-title">Viajá a Orlando</h3>
+                                        <p class="card-text">
+                                            Con escalas por United Airlines
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 d-none d-lg-block">
+                                <div class="card">
+                                    <img
+                                        src="https://mdbootstrap.com/img/new/standard/nature/186.jpg"
+                                        class="card-img-top"
+                                        alt="..."
+                                        />
+                                    <div class="card-body">
+                                        <p class="card-text">VUELOS</p>
+                                        <h3 class="card-title">Viajá a Cancún</h3>
+                                        <p class="card-text">
+                                            Con 1 escala por Copa Airlines
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-3 d-none d-lg-block">
+                                <div class="card">
+                                    <img
+                                        src="https://mdbootstrap.com/img/new/standard/nature/183.jpg"
+                                        class="card-img-top"
+                                        alt="..."
+                                        />
+                                    <div class="card-body">
+                                        <p class="card-text">VUELOS</p>
+                                        <h3 class="card-title">Viajá a Puerto Iguazú</h3>
+                                        <p class="card-text">
+                                            Directo por JetSMART
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- Single item -->
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                                <div class="card">
+                                    <img
+                                        src="https://mdbootstrap.com/img/new/standard/nature/187.jpg"
+                                        class="card-img-top"
+                                        alt="..."
+                                        />
+                                    <div class="card-body">
+                                        <p class="card-text">VUELOS</p>
+                                        <h3 class="card-title">Viajá a Mendoza</h3>
+                                        <p class="card-text">
+                                            Directo por JetSMART
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 mb-4 mb-lg-0 d-none d-lg-block">
+                                <div class="card">
+                                    <img
+                                        src="https://mdbootstrap.com/img/new/standard/nature/188.jpg"
+                                        class="card-img-top"
+                                        alt="..."
+                                        />
+                                    <div class="card-body">
+                                        <p class="card-text">VUELOS</p>
+                                        <h3 class="card-title">Viajá a Punta Cana</h3>
+                                        <p class="card-text">
+                                            Con 1 escala por Copa Airlines
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 mb-4 mb-lg-0 d-none d-lg-block">
+                                <div class="card">
+                                    <img
+                                        src="https://mdbootstrap.com/img/new/standard/nature/189.jpg"
+                                        class="card-img-top"
+                                        alt="..."
+                                        />
+                                    <div class="card-body">
+                                        <p class="card-text">VUELOS</p>
+                                        <h3 class="card-title">Viajá a San Carlos de Bariloche</h3>
+                                        <p class="card-text">
+                                            Directo por JetSMART
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-3 d-none d-lg-block">
+                                <div class="card">
+                                    <img
+                                        src="https://mdbootstrap.com/img/new/standard/nature/183.jpg"
+                                        class="card-img-top"
+                                        alt="..."
+                                        />
+                                    <div class="card-body">
+                                        <p class="card-text">VUELOS</p>
+                                        <h3 class="card-title">Viajá a Salta</h3>
+                                        <p class="card-text">
+                                            Directo por JetSMART
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <!-- boton "VER MAS" que te lleve a una pagina de todos los lugares disponibles para viajar -->
+        <!-- info de tarjetas -->
+    </main>
+    <footer class="container" id="footer">
         <!-- Redes Sociales -->
+        <div class="row text-center justify-content-center">
+        <div id="redes" class="col-4">
+            <h3>Nuestras redes sociales</h3>
+            <ul class="list-inline">
+            <li class="list-inline-item"><a href="#"><i class="fab fa-youtube"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+            </ul>
+        </div>
+        </div>
         <!-- Suscribirse (despegar.com) -->
         <!-- Certificados de legalidad -->
+        <div class="row text-center justify-content-center">
+        <div class="col-4">
+            <h4>Certificados y condecoraciones</h4>
+        </div>
+        <div class="col-4">
+            <h4>Recibi ofertas exclusivas a tu email</h4>
+        </div>
+        </div>
+        <form class="row g-2 text-center justify-content-center">
+        <div class="col-4">
+            <ul class="list-inline">
+            <li class="list-inline-item redes"><a href="#"><img src="img/certificados/datafiscal.png" alt="data fiscal"></a></li>
+            <li class="list-inline-item redes"><a href="#"><img src="img/certificados/constancia.png" alt=""></a></li>
+            <li class="list-inline-item redes"><a href="#"><img src="img/certificados/certificadodexd.png" alt=""></a></li>
+            <li class="list-inline-item redes"><a href="#"><img src="img/certificados/iata.png" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="col-2">
+            <input type="text" class="form-control -3" id="email" placeholder="Correo Electronico">
+        </div>
+        <div class="col-2">
+            <button type="submit" class="btn btn-primary">Quiero inscribirme</button>
+        </div>
+        </form> 
         <!-- Links de texto para llenar -->
         <!-- Datos de contacto y terminos y condiciones -->
+        <div class="row">
+        <p style="color: #CCCCCC;">El titular de los datos personales tiene la facultad de ejercer el derecho de acceso a los mismos en forma gratuita a intervalos no inferiores a seis meses, salvo que se acredite un interés legítimo al efecto conforme lo establecido en el artículo 14, inciso 3 de la Ley Nº 25.326". "La AGENCIA DE ACCESO A LA INFORMACIÓN PÚBLICA, Organo de Control de la Ley Nº 25.326, tiene la atribución de atender las denuncias y reclamos que se interpongan con relación al incumplimiento de las normas sobre protección de datos personales.
+            De acuerdo a la ley 24.240, se encuentra a su disposición un ejemplar del modelo de contrato que propone la empresa a suscribir al momento de la contratación.</p>
+        </div>
     </footer>
 </body>
 </html>
