@@ -16,7 +16,7 @@
     height: 28%;
     display:flex;
     align-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /*test*/
     color: #333;
     transform: translate(0px,300px);
     opacity: 0;
