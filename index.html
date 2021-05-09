@@ -16,6 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/destinoSorpresa.js"></script>
     <title>Travelers</title>
 </head>
 <body>
@@ -49,7 +50,7 @@
                 </ul>
                 </li> -->
                 <li class="nav-item h4"><a class="nav-link text-success" href="reserva.html">Reservas</a></li>
-                <li class="nav-item h4"><a class="nav-link text-success" href="#">Destino sorpresa</a></li>
+                <li class="nav-item h4"><a class="nav-link text-success" href="#" onclick="destinoSorpresaModal()">Destino sorpresa</a></li>
                 <li class="nav-item h4"><a class="nav-link text-success" href="#">Información</a></li>
             </ul>
             <form class="d-flex">
@@ -60,7 +61,7 @@
         </div>
         </div>
     </nav>
-    <main>
+    <div>
         <!-- Carousel de portada -->
         <div class="row w-100">
         <section class="height-carousel p-0">
@@ -429,6 +430,24 @@
         </section>
         <!-- boton "VER MAS" que te lleve a una pagina de todos los lugares disponibles para viajar -->
         <!-- info de tarjetas -->
+
+        <!--Modal-->
+        <div class="modal" tabindex="-1" id="modal-destino">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Felicidades! su destino sorpresa es...</h5>
+                </div>
+                <div class="modal-body" id="destinoRandom">
+                  
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-primary">Mas informacion</button>
+                </div>
+              </div>
+            </div>
+        </div>
     </main>
     <footer class="container" id="footer">
         <!-- Redes Sociales -->
