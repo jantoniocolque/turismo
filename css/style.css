@@ -117,3 +117,12 @@
     color: #008f39;
     font-size: 25px;
 }
+
+#destinoRandom .image-content img {
+    width: 100%;
+    height: 100%;
+}
+
+#destinoRandom .image-content{
+    text-align: center;
+}
