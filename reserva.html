@@ -66,6 +66,29 @@
             <h4 class="mb-3">Reserva de destino</h4>
             <form class="needs-validation" novalidate="">
               <div class="row g-3">
+
+                <div class="col-12">
+                  <label for="country" class="form-label">Destino elegido</label>
+                  <select class="form-select" id="country" required="">
+                    <option value="">Elegir...</option>
+                    <option>Bariloche</option>
+                    <option>Cancún</option>
+                    <option>Cordoba</option>
+                    <option>Iguazú</option>
+                    <option>Mar del Plata</option>
+                    <option>Mendoza</option>
+                    <option>Nueva York</option>
+                    <option>Orlando</option>
+                    <option>Punta Cana</option>
+                    <option>Rosario</option>
+                    <option>Salta</option>
+                    <option>Uruguay</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Por favor selecciona un destino válido.
+                  </div>
+                </div>
+
                 <div class="col-sm-6">
                   <label for="firstName" class="form-label">Nombre</label>
                   <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
